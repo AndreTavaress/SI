@@ -7,4 +7,5 @@ def home(request):
         item = request.POST.get('ingredientes_usu')
         
         
+        
     return render(request, 'home.html')
