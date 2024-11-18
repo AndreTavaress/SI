@@ -1,3 +1,6 @@
 from django.contrib import admin
+from receitas.models import *
 
-# Register your models here.
+@admin.register(receita)
+class ReceitaAdmin(admin.ModelAdmin):
+    list_display = ('ingredientes','receita_criada')
