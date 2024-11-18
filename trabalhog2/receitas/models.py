@@ -4,5 +4,5 @@ class receita(models.Model):
     ingredientes = models.CharField(max_length=1000)
     receita_criada = models.CharField(max_length= 10000)
     
-    def __str__(self) -> str:
+    def __str__(self):
         return f"Receita: {self.id}"
